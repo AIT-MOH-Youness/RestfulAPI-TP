@@ -32,8 +32,9 @@ L'API offre les fonctionnalités suivantes :
 
 ## Exécution du projet
 
-1. **Cloner le projet :** `git clone <URL du projet>`
-2. **Compiler et exécuter :** `mvn spring-boot:run`
+1. **Cloner le projet :** `git clone https://github.com/AIT-MOH-Youness/RestfulAPI-TP.git`
+2. **Changer le répertoire :** `cd student-management`
+3. **Compiler et exécuter :** `mvn spring-boot:run`
 
 ## Accès à la documentation Swagger UI
 
