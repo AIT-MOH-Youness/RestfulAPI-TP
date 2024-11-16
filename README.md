@@ -3,6 +3,14 @@
 
 Ce README décrit deux projets Spring Boot distincts : MaBanque, une API REST pour la gestion de comptes bancaires, et un système de gestion des étudiants.
 
+
+## Exécution des projets
+
+1. **Cloner le projet :** `git clone https://github.com/AIT-MOH-Youness/RestfulAPI-TP.git`
+2. **Changer le répertoire :** `cd <répertoire du projet>`
+3. **Compiler et exécuter :** `mvn spring-boot:run`
+
+
 ## Projet 1 : MaBanque - API REST pour la gestion de comptes
 
 Ce projet fournit une API REST pour gérer les comptes bancaires, utilisant une base de données H2 en mémoire pour le développement.
