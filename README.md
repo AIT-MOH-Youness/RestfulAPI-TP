@@ -37,7 +37,8 @@ Ce projet fournit une API REST pour gérer les comptes bancaires, utilisant une 
 
 
 **Premiere demonstartion**
-https://github.com/user-attachments/assets/ca137f19-1aa7-413f-92e0-3d543676895f
+
+* https://github.com/user-attachments/assets/ca137f19-1aa7-413f-92e0-3d543676895f
 
 
 
@@ -81,4 +82,5 @@ Ce projet fournit une API REST pour gérer les informations des étudiants, util
 
 
 **Deuxieme démonstartion**
-https://github.com/user-attachments/assets/5a7e3a18-a7cc-4dfa-9e60-fa50f349955e
+
+* https://github.com/user-attachments/assets/5a7e3a18-a7cc-4dfa-9e60-fa50f349955e
