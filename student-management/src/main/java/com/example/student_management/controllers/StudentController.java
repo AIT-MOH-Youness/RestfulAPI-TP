@@ -18,14 +18,14 @@ public class StudentController {
 
 
     // POST /students/save
-    @PostMapping("/save")
+    @PostMapping(value = "/save", consumes = { "application/json", "application/xml" }, produces = {"application/json", "application/xml"})
     public ResponseEntity<Student> save(@RequestBody Student student) {
         Student savedStudent = studentService.save(student);
         return new ResponseEntity<>(savedStudent, HttpStatus.CREATED);
     }
 
     // DELETE /students/delete/{id}
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<Void> delete(@PathVariable("id") int id) {
         boolean deleted = studentService.delete(id);
         if (deleted) {
@@ -36,21 +36,21 @@ public class StudentController {
     }
 
     // GET /students/all
-    @GetMapping("/all")
+    @GetMapping(value = "/all", produces = {"application/json", "application/xml"})
     public ResponseEntity<List<Student>> findAll() {
         List<Student> students = studentService.findAll();
         return new ResponseEntity<>(students, HttpStatus.OK);
     }
 
     // GET /students/count
-    @GetMapping("/count")
+    @GetMapping(value = "/count", produces = {"application/json", "application/xml"})
     public ResponseEntity<Long> countStudent() {
         long count = studentService.countStudents();
         return new ResponseEntity<>(count, HttpStatus.OK);
     }
 
     // GET /students/byYear
-    @GetMapping("/byYear")
+    @GetMapping(value = "/byYear", produces = {"application/json", "application/xml"})
     public ResponseEntity<Collection<?>> findByYear() {
         Collection<?> studentsByYear = studentService.findNbrStudentByYear();
         return new ResponseEntity<>(studentsByYear, HttpStatus.OK);

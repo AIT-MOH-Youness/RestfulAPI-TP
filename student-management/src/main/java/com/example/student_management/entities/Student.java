@@ -1,9 +1,12 @@
 package com.example.student_management.entities;
 
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
+@JacksonXmlRootElement(localName = "student") // Indique que cette classe peut être serialisée en XML
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
